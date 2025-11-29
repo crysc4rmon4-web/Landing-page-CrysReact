@@ -1,28 +1,21 @@
 import React from "react";
+import Navbar from "./Navbar";
+import Divtop from "./Divtop";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
-	return (
-		<div className="text-center">
-            
-
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+  return (
+    <>
+      <Navbar />
+	  <Divtop/>
+      {/* Aquí irán los demás componentes: <Hero />, <Features />, <Pricing />, <Footer /> */}
+      <main className="container py-5">
+        <h1 className="text-center">Landing en construcción</h1>
+        <p className="text-center text-muted">Agrega los componentes debajo del Navbar.</p>
+      </main>
+    </>
+  );
 };
 
 export default Home;
