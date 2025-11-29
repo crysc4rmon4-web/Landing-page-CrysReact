@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header>
       {/* Navbar principal */}
-      <nav className="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+     <nav className="navbar navbar-expand-lg navbar-light navbar-dark-neon">
         <div className="container">
 
           {/* Brand / logo a la izquierda */}
@@ -30,23 +30,23 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarMain">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#home">
-                  Home
+                <a className="nav-link" aria-current="page" href="#home">
+                  Core
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#about">
-                  About
+                 Crysyn DNA
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#services">
-                  Services
+                  Toolkit
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#contact">
-                  Contact
+                  Ping me
                 </a>
               </li>
             </ul>

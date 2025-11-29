@@ -3,13 +3,15 @@ import React from "react";
 export default function Divtop() {
   return (
     <section className="container-fluid py-5">
-      <div className="card justify-content p-4 border">
+      <div className="card justify-content p-4 border divtop-card">
         <h1 className="card-title">Sync Complete.</h1>
         <p className="card-text mt-3">
-          Zona principal del sistema: donde tu idea toma forma y se convierte en impacto.
+          🌐 Main system area: where your idea takes shape and turns into impact.⚡
         </p>
-        <button className="btn btn-warning mt-3 w-50 d-block mx-auto" >Activar Crysyn <i class="bi bi-exclamation-triangle"></i></button>
+        <button className="divtop-btn mt-3 w-50 d-block mx-auto">
+          Activar Crysyn <i className="bi bi-exclamation-triangle"></i>
+        </button>
       </div>
-    </section> 
+    </section>
   );
 }
