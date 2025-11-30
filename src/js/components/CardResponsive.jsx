@@ -1,7 +1,8 @@
 import React from "react";
 
 
-// CardResponsive
+// CardResponsive ESTRUCTURA REUTILIZABLE DE UNA CARD
+
 export default function CardResponsive({ imgSrc, title, text, btnText }) {
   return (
     <div className="col-md-6 col-lg-3 mb-4">

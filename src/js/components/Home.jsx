@@ -4,6 +4,7 @@ import Divtop from "./Divtop";
 import CardReutilizable from "./CardReutilizable";
 import Footer from "./Footer";
 
+// ARCHIVO HOME DONDE SE IMPORTA EL HTML EN GENERAL 
 //create your first component
 const Home = () => {
   return (

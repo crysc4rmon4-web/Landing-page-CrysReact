@@ -1,6 +1,8 @@
 import React from "react";
 import CardResponsive from "./CardResponsive";
 
+// CARD REUTILIADA EN FUNCION., IMPORTANDO CARDRESPONSIVE.JSX
+
 export default function CardReutilizable() {
   const cardsData = [
     { imgSrc: "https://images.pexels.com/photos/2158892/pexels-photo-2158892.jpeg", title: "Ninja Mantis", text: "Mantises can rotate their heads almost 180° and strike prey with lightning-fast reflexes, like nature’s own ninja.", btnText: "Explore" },

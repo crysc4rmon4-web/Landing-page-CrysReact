@@ -1,6 +1,8 @@
 import React from "react";
 
 // Navbar funcional de Bootstrap 5
+
+
 export default function Navbar() {
   return (
     <header>
@@ -13,7 +15,7 @@ export default function Navbar() {
             Crysyn Prime <i class="bi bi-cup-hot-fill"></i>
           </a>
 
-          {/* Botón hamburguesa visible solo cuando colapsa (md o menor) */}
+          {/* Botón hamburguesa PARA DISPOSITIVOS MAS PEQUEÑOS */}
           <button
             className="navbar-toggler"
             type="button"
@@ -26,27 +28,27 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          {/* Menú que colapsa debajo de lg */}
+          {/* MENU DEL NAVBAR, Menú que colapsa debajo de lG*/}
           <div className="collapse navbar-collapse" id="navbarMain">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" href="#home">
-                  Core
+                  Territory
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#about">
-                 Crysyn DNA
+                 Species
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#services">
-                  Toolkit
+                  Behavior
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#contact">
-                  Ping me
+                  Wild Contact
                 </a>
               </li>
             </ul>

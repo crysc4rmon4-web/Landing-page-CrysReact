@@ -1,11 +1,187 @@
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    
+}
+
+/* Navbar Dark Neon Base */
+.navbar-dark-neon {
+    background-color: #0a0a0a;
+    border: 2px solid #ff00ff80;
+    border-radius: 15px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+    position: relative;
+}
+
+.navbar-dark-neon .navbar-brand {
+    color: #ff00ff;
+    font-weight: 700;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff80;
+    transition: text-shadow 0.3s;
+}
+
+.navbar-dark-neon .nav-link {
+    color: #fff;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.navbar-dark-neon .nav-link:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff80;
+}
+
+/* Efecto Glowing Corner al hover */
+.navbar-dark-neon:hover {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff80, 0 0 30px #ff00ff40;
+}
+
+/* Botón hamburguesa fucsia neon */
+.navbar-dark-neon .navbar-toggler {
+    border-color: #ff00ff;
+}
+
+.navbar-dark-neon .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,0,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/*DIVTOP*/
+
+/* Divtop Card Dark Neon */
+.divtop-card {
+    background-color: #0a0a0a;
+    border: 2px solid #ff00ff80;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff80, 0 0 30px #ff00ff40;  
+}
+
+/* Título de la card */
+.divtop-card .card-title {
+    color: #ff00ff;
+    font-weight: 700;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff80;
+}
+
+/* Texto de la card */
+.divtop-card .card-text {
+    color: #fff;
+    text-shadow: 0 0 2px #ff00ff50;
+}
+
+/* Botón Neon Pulse */
+.divtop-btn {
+    background-color: #ff00ff;
+    color: #0a0a0a;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff80;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Hover: neon pulse + rotateX */
+.divtop-btn:hover {
+    animation: neonPulse 1s infinite alternate;
+    transform: rotateX(10deg);
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff80, 0 0 45px #ff00ff50;
+}
+
+/* Animación Neon Pulse */
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff80;
+    }
+
+    50% {
+        box-shadow: 0 0 10px #ff00ff, 0 0 25px #ff00ffaa;
+    }
+
+    100% {
+        box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ffcc;
+    }
+}
+
+
+/* estilo para las cards*/
+/* Card Dark Neon */
+.feature-card {
+    background-color: #0a0a0a;
+    border: 2px solid #ff00ff40;
+    border-radius: 15px;
+    max-width: 18rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Glow sutil al hover */
+.feature-card:hover {
+    box-shadow: 0 0 8px #ff00ff50, 0 0 15px #ff00ff30;
+    transform: translateY(-3px);
+}
+
+/* Título y texto dentro de la card */
+.feature-card .card-title {
+    color: #ff00ff;
+    font-weight: 700;
+    text-shadow: 0 0 3px #ff00ff50;
+}
+
+.feature-card .card-text {
+    color: #fff;
+    text-shadow: 0 0 1px #ff00ff20;
+}
+
+
+/* Footer Dark Neon */
+.footer {
+  background-color: #0a0a0a; /* fondo negro profundo */
+  color: #fff; /* texto blanco general */
+  border-top: 2px solid #ff00ff40; /* borde fucsia sutil */
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+}
+
+/* Texto secundario */
+.footer small {
+  color: #aaa;
+}
+
+/* Palabra 'code' con efecto neon */
+.footer-code {
+  color: #ff00ff; 
+  font-weight: 700;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff80, 0 0 15px #ff00ff50;
+  display: inline-block;
+  transition: transform 0.3s, text-shadow 0.3s;
+  cursor: default;
+}
+
+/* Hover animado sutil */
+.footer-code:hover {
+  animation: codeGlow 1s infinite alternate;
+  transform: rotateY(10deg) scale(1.1);
+}
+
+/* Animación glow sutil */
+@keyframes codeGlow {
+  0% {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff80;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ffaa;
+  }
+  100% {
+    text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff00ffcc;
+  }
+}
